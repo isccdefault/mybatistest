@@ -1,0 +1,12 @@
+2020-03-17 19:33:40,821 - ResourceManager : unable to find resource 'information.vm' in any resource loader.
+2020-03-17 19:36:02,733 - ResourceManager : unable to find resource 'example.vm' in any resource loader.
+2020-03-17 19:37:07,989 - ResourceManager : unable to find resource 'example.vm' in any resource loader.
+2020-03-17 19:40:54,017 - ResourceManager : unable to find resource 'example.vm' in any resource loader.
+2020-03-17 19:41:06,118 - ResourceManager : unable to find resource '/example.vm' in any resource loader.
+2020-03-17 19:43:23,505 - ResourceManager : unable to find resource '/com/cc/velocity/example.vm' in any resource loader.
+2020-03-17 19:43:55,431 - ResourceManager : unable to find resource 'src//com/cc/velocity/example.vm' in any resource loader.
+2020-03-17 19:46:06,108 - ResourceManager : unable to find resource 'example.vm' in any resource loader.
+2020-03-17 19:46:31,306 - FileResourceLoader : File resource error : argument null contains .. and may be trying to access content outside of template root.  Rejected.
+2020-03-17 19:46:31,307 - ResourceManager : unable to find resource '../example.vm' in any resource loader.
+2020-03-17 19:47:22,104 - ResourceManager : unable to find resource 'example.vm' in any resource loader.
+2020-03-17 20:07:21,215 - ResourceManager : unable to find resource 'example.vm' in any resource loader.

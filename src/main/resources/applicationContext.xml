@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop-3.2.xsd
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
+
+    <!--扫描注解-->
+    <context:component-scan base-package="com.cc"></context:component-scan>
+
+    <!-- 数据库连接池配置文件Dao层 -->
+    <!-- 加载配置文件 -->
+    <!--<context:property-placeholder location="classpath:jdbc.properties"/>-->
+
+    <!-- 数据库连接池，使用dbcp -->
+    <!--<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">-->
+        <!--<property name="url" value="${url}"/>-->
+        <!--<property name="username" value="${jdbcusername}"/>-->
+        <!--<property name="password" value="${password}"/>-->
+        <!--<property name="maxActive" value="10"/>-->
+        <!--<property name="maxIdle" value="5"/>-->
+    <!--</bean>-->
+
+    <!-- SqlSessionFactory配置 -->
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+        <!--<property name="dataSource" ref="dataSource" />-->
+        <!--&lt;!&ndash; 加载mybatis的全局配置文件 &ndash;&gt;-->
+        <!--<property name="mapperLocations" value="classpath:userMapper.xml" />-->
+    <!--</bean>-->
+
+    <!--&lt;!&ndash; mapper扫描器 &ndash;&gt;-->
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--&lt;!&ndash; 扫描包路径，如果需要扫描多个包，中间使用半角逗号隔开  &ndash;&gt;-->
+        <!--<property name="basePackage" value="com.cc.api"/>-->
+        <!--<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>-->
+    <!--</bean>-->
+    <!--&lt;!&ndash; 事务管理器&ndash;&gt;-->
+    <!--<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
+</beans>
