@@ -181,7 +181,7 @@
       <dependency>
           <groupId>org.mybatis</groupId>
           <artifactId>mybatis</artifactId>
-          <version>3.2.6</version>
+          <version>3.5.6</version>
       </dependency>
 
       <!-- 导入dbcp的jar包，用来在applicationContext.xml中配置数据库 -->
